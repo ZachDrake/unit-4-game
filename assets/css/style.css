@@ -21,13 +21,16 @@ header {
 p {
     margin: 10px;
 }
-.randomScore {
+.matchTitle {
     color: lightslategray;
     background-color: white;
     height: 200px;
     width: 45%;
     margin-left: 4%;
     float: left;
+}
+.randomScore {
+    font-size: 32px;
 }
 .winsLoseBox {
     font-size: 12px;
@@ -44,6 +47,7 @@ p {
     background-color: lightslategray;
 }
 .playerScore {
+    font-size: 32px;
     color: lightslategray;
     background-color: white;
     height: 143px;

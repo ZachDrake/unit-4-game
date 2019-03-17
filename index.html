@@ -5,8 +5,9 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="myscripts.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
     <title>Crystals Collector</title>
 </head>
 
@@ -34,18 +35,20 @@
                 will change the values of each crystal.
             </p>
         </div>
-        <div class="randomScore">Score to match:</div>
+        <div class="matchTitle">Score to match:
+            <div class="randomScore"></div>
+        </div>
         <div class="winsLoseBox">
             <div class="wins">Wins:</div>
             <div class="loses">Loses:</div>
         </div>
         <div class="playerScoreTitle">Your score is:</div>
         <div class="playerScore">00001</div>
-        <img src="assets/images/blue-sapphire.jpg" title="blue-sapphire">
-        <img src="assets/images/fire-opal.jpg" title="fire-opal">
-        <img src="assets/images/red-ruby.jpg" title="red-ruby">
-        <img src="assets/images/turquoise.jpg" title="turquoise">
-       
+        <img id="gem1" src="assets/images/blue-sapphire.jpg" title="blue-sapphire">
+        <img id="gem2" src="assets/images/fire-opal.jpg" title="fire-opal">
+        <img id="gem3" src="assets/images/red-ruby.jpg" title="red-ruby">
+        <img id="gem4" src="assets/images/turquoise.jpg" title="turquoise">
+
     </div>
 </body>
 
