@@ -1,0 +1,61 @@
+header {
+    font-size: 32px;
+    color: white;
+    background-color: lightslategray;
+    padding: 10px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.container {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+    line-height: 1.25;
+    color: white;
+    background-color: lightslategray;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+}
+p {
+    margin: 10px;
+}
+.randomScore {
+    color: lightslategray;
+    background-color: white;
+    height: 200px;
+    width: 45%;
+    margin-left: 4%;
+    float: left;
+}
+.winsLoseBox {
+    font-size: 12px;
+    background-color: white;
+    color: lightslategray;
+    height: 40px;
+    width: 45%;
+    margin-right: 4%;
+    float: right;
+}
+.playerScoreTitle {
+    font-size: 14px;
+    color: white;
+    background-color: lightslategray;
+}
+.playerScore {
+    color: lightslategray;
+    background-color: white;
+    height: 143px;
+    width: 45%;
+    float: right;
+    margin-right: 4%;
+}
+img {
+    width: 15%;
+    height: 15%;
+    margin: 2%;
+}
+
+
+
