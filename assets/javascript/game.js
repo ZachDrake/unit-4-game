@@ -20,7 +20,8 @@ $(document).ready(function(){
     var wins = 0;
     var loses = 0;
 
-    // initalize values
+
+    // write values to DOM
     $('.randomScore').text(randomScore);
     $('.playerScore').text(userScore);
 
@@ -28,32 +29,55 @@ $(document).ready(function(){
     $('#gem1').click(function(){
         userScore += gem1;
         $('.playerScore').text(userScore);
+        compare(userScore, randomScore);
     });
     $('#gem2').click(function(){
         userScore += gem2;
         $('.playerScore').text(userScore);
+        compare(userScore, randomScore);
+
     });
     $('#gem3').click(function(){
         userScore += gem3;
         $('.playerScore').text(userScore);
+        compare(userScore, randomScore);
+
     });
     $('#gem4').click(function(){
         userScore += gem4;
         $('.playerScore').text(userScore);
+        compare(userScore, randomScore);
+
     });
+
+    function reset() {
+         userScore = 0;
+         randomScore = Math.floor(Math.random() * 101) + 19;
+         gem1 = Math.floor(Math.random() * 11) + 1;
+         gem2 = Math.floor(Math.random() * 11) + 1;
+         gem3 = Math.floor(Math.random() * 11) + 1;
+         gem4 = Math.floor(Math.random() * 11) + 1;
+         $('.randomScore').text(randomScore);
+         $('.playerScore').text(userScore);
+         return  userScore, randomScore, gem1, gem2, gem3, gem4;
+    }
+
 
     function compare(userScore, randomScore){
     if (userScore === randomScore) {
+        reset();
         wins++;
-        $('.wins').text(wins);
+        $('.wins').text("Wins: " +wins);
         return wins;
     }
     else if (userScore > randomScore){
+        reset();
         loses++; 
-        $('.loses').text(loses);
+        $('.loses').text("Loses: " +loses);
         return loses;
-    }
-    }
         
-    $('.gems').click(compare());
+    }
+    }
+     
+    
 });
