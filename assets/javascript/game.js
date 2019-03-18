@@ -41,4 +41,19 @@ $(document).ready(function(){
         userScore += gem4;
         $('.playerScore').text(userScore);
     });
+
+    function compare(userScore, randomScore){
+    if (userScore === randomScore) {
+        wins++;
+        $('.wins').text(wins);
+        return wins;
+    }
+    else if (userScore > randomScore){
+        loses++; 
+        $('.loses').text(loses);
+        return loses;
+    }
+    }
+        
+    $('.gems').click(compare());
 });

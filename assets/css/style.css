@@ -4,7 +4,7 @@ header {
     background-color: lightslategray;
     padding: 10px;
     text-align: center;
-    width: 60%;
+    width:90%;
     margin: 0 auto;
 }
 .container {
@@ -15,7 +15,7 @@ header {
     background-color: lightslategray;
     margin: 0 auto;
     text-align: center;
-    width: 60%;
+    width: 90%;
     height: 100%;
 }
 p {
@@ -55,11 +55,19 @@ p {
     float: right;
     margin-right: 4%;
 }
+.gemContainer {
+    clear: both;
+}
 img {
     width: 15%;
     height: 15%;
     margin: 2%;
 }
 
+@media screen and (max-width: 768px) {
+    img{
+        width: 11%;
+    }
+}
 
 
